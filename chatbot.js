@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const chatHistoryKey = "medical_study_assistant_history";
     const firstMessageKey = "medical_study_assistant_first_message";
-    const GEMINI_API_KEY = "AIzaSyAH7-EXHhkqgmlSyyc0xfzyvgAXw33aQfk"; // Replace with your actual API key
+    const GEMINI_API_KEY = "API KEY CONFIDENTIAL"; // Replace with your actual API key
     const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
 
     const medicalKeywords = ["anatomy", "physiology", "pathology", "pharmacology", "diagnosis", "treatment", "symptoms", "disease", "syndrome", "bacteria", "virus", "cell", "gene", "muscle", "bone", "nerve", "heart", "lung", "kidney", "liver", "brain"];
