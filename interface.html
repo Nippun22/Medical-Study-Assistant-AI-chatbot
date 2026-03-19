@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Study Assistant</title>
+    <link rel="stylesheet" href="chatbot2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="full-screen-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="logo.jpeg" alt="Small Medical Logo" class="sidebar-logo">
+            </div>
+            <div class="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="sidebar-nav">
+                <button id="clear-chat-sidebar" class="sidebar-button">
+                    <i class="fas fa-trash"></i> <span>Clear Chat</span>
+                </button>
+                <button id="settings-button" class="sidebar-button">
+                    <i class="fas fa-cog"></i> <span>Settings</span>
+                </button>
+                <button id="about-button" class="sidebar-button">
+                    <i class="fas fa-info-circle"></i> <span>About</span>
+                </button>
+            </nav>
+        </aside>
+        <div class="chat-area">
+            <div class="chat-header">
+                <img src="logo.jpeg" alt="Medical Logo" class="header-logo">
+                <h2>Medical Study Assistant</h2>
+                <div class="header-reg-number">Developed By:<br> 12309292 Nippun<br>12319510 Tanishka Soni</div>
+            </div>
+            <div class="chat-box">
+                <div class="welcome-screen" id="welcome-screen">
+                    <div class="welcome-content">
+                        <img src="logo.jpeg" alt="Medical Logo" class="welcome-logo">
+                        <h1>Welcome to Your Medical Study Assistant!</h1>
+                        <p>Hello! I'm here to help you learn about various medical topics. Ask me anything, and I'll provide a summary and some practice questions!</p>
+                        <div class="example-queries">
+                            <h3>Try asking me about:</h3>
+                            <ul>
+                                <li>What is the pathophysiology of asthma?</li>
+                                <li>Explain the citric acid cycle.</li>
+                                <li>Tell me about the symptoms and treatment of pneumonia.</li>
+                                <li>Describe the anatomy of the human heart.</li>
+                                <li>What are the different types of diabetes?</li>
+                            </ul>
+                        </div>
+                        <button id="start-chatting" class="start-button">Start Learning</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-area" id="input-area">
+                <label for="file-upload" class="file-attach">
+                    <i class="fas fa-paperclip"></i>
+                </label>
+                <input type="file" id="file-upload" class="hidden-input">
+                <div class="input-placeholder" id="input-placeholder">Click "Start Learning" to begin!</div>
+                <input type="text" id="user-input" placeholder="Type your medical question..." class="hidden-input">
+                <button id="send-button" class="hidden-input" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
